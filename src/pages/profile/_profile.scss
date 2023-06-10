@@ -1,0 +1,156 @@
+.profile {
+	display: block;
+	padding: 60px 0 109px;
+	width: 510px;
+	margin: 0 auto;
+	position: relative;
+
+	&__wrapper {
+		height: 551px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__menu {
+		border: 1px solid var(--main-color);
+		border-width: 1px 0 0 1px;
+		border-radius: 10px 0 0;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		margin: 0;
+		padding: 0 15px;
+
+		li {
+			list-style-type: none;
+			padding: 12px 0;
+			&:last-child {
+				a {
+					color: #f00;
+				}
+			}
+		}
+	}
+	&__menu-active {
+		text-shadow: 1px 1px 1px;
+	}
+
+	&__link {
+		color: var(--main-color);
+	}
+
+	&__avatar {
+		@include avatar;
+
+		width: 130px;
+		height: 130px;
+		position: relative;
+		cursor: pointer;
+
+		.profile__hover {
+			visibility: hidden;
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		&:hover .profile__hover {
+			visibility: visible;
+			background-color: rgb(51 105 243 / 30%);
+		}
+	}
+
+	&__name {
+		color: var(--main-color);
+		font-weight: 600;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	&__content {
+		width: 510px;
+		position: absolute;
+		top: 300px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		&-form {
+			width: 100%;
+		}
+
+		&-elem {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #eaeaea;
+			height: 35px;
+			padding: 10px 0;
+			position: relative;
+
+			input {
+				margin-left: auto;
+				font-size: 13px;
+				border: none;
+				border-bottom: 1px solid var(--main-color);
+				color: var(--main-color);
+				padding: 5px 0;
+				outline: none;
+
+				&::placeholder {
+					text-align: end;
+				}
+			}
+			label {
+				// display: inline-block;
+				position: absolute;
+				bottom: 0px;
+				right: -67%;
+				color: red;
+				font-size: 10px;
+				width: 65%;
+			}
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+				border: 0;
+			}
+		}
+	}
+
+	&__title {
+		color: var(--name-color);
+		font-size: 13px;
+	}
+
+	&__value {
+		font-size: 13px;
+		color: var(--gray-color);
+	}
+
+	&__button {
+		margin: 60px auto 0;
+	}
+}
+
+#avatar {
+	display: none;
+}

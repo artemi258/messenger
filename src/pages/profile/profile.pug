@@ -1,0 +1,21 @@
+
+section.profile
+    ul.profile__menu
+        li.profile__item
+            #{chat}
+        li.profile__item
+            #{profile}
+        li.profile__item
+            #{data}
+        li.profile__item
+            #{password}
+        li.profile__item
+            #{exit}
+    .profile__wrapper
+        .profile__header
+            div(class='profile__avatar') 
+                    img(src=`${avatar ? 'https://ya-praktikum.tech/api/v2/resources' + avatar : 'https://new.kemmamed.ru/upload/staff_photo_no.jpg'}` alt='avatar')
+                    div(class='profile__hover' data-href='/profile/changeAvatar') Поменять аватар
+            h3.profile__name #{first_name} 
+        
+

@@ -1,0 +1,38 @@
+if (trigger === 'profile')
+    .profile__content
+        .profile__content-elem
+            .profile__title Почта
+            .profile__value #{email}
+        .profile__content-elem
+            .profile__title Логин
+            .profile__value #{login}
+        .profile__content-elem
+            .profile__title Имя
+            .profile__value #{first_name}
+        .profile__content-elem
+            .profile__title Фамилия
+            .profile__value #{second_name}
+        .profile__content-elem
+            .profile__title Имя в чате
+            .profile__value #{display_name}
+        .profile__content-elem
+            .profile__title Телефон
+            .profile__value #{phone}
+if (trigger === 'data')
+    .profile__content
+        form#data.profile__content-form
+            #{emailInput}
+                #{loginInput}
+                    #{first_nameInput}
+                        #{second_nameInput}
+                            #{display_nameInput}
+                                #{phoneInput}
+                                    #{button}
+if (trigger === 'password')
+    .profile__content
+        form#password.profile__content-form
+                #{oldPasswordInput}
+                    #{newPasswordInput}
+                        #{newPassword2Input}
+                            #{button}
+                            

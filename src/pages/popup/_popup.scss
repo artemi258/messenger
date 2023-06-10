@@ -1,0 +1,94 @@
+.popup {
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	background: #fff;
+	box-shadow: 0 0 6px rgb(0 0 0 / 14%);
+	border-radius: 12px;
+	width: 340px;
+	z-index: 1000;
+
+	&__backgraund {
+		display: block;
+		background: var(--main-color);
+		opacity: 0.4;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 10;
+	}
+
+	&__wrapper {
+		padding: 40px 30px;
+	}
+
+	&__title {
+		color: var(--title-color);
+		text-align: center;
+	}
+
+	&__input {
+		width: 100%;
+		margin-top: 50px;
+		position: relative;
+
+		input {
+			width: 100%;
+			height: 100%;
+			border: none;
+			border-bottom: 1px solid var(--main-color);
+			outline: none;
+		}
+		label {
+			display: inline-block;
+			color: red;
+			font-size: 10px;
+			width: 100%;
+		}
+
+		&::before {
+			content: 'Логин';
+			position: absolute;
+			font-size: 9px;
+			color: var(--gray-color);
+			left: 0;
+			top: -10px;
+		}
+	}
+
+	&__button {
+		margin-top: 33px;
+	}
+}
+
+#popup__avatar .popup,
+#popup__file .popup {
+	&__input {
+		border: none;
+		display: flex;
+		justify-content: center;
+
+		&::before {
+			content: none;
+		}
+
+		input {
+			border: none;
+			display: none;
+		}
+
+		label {
+			color: var(--name-color);
+			text-decoration: underline solid;
+			width: 122px;
+			font-size: 12px;
+			line-height: 16px;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+}

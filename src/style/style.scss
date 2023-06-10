@@ -1,0 +1,34 @@
+@import './mixins';
+@import './variables';
+@import './button';
+@import '../pages/entrance/entrance';
+@import '../pages/chats/chats';
+@import '../pages/registration/registration';
+@import '../pages/popup/popup';
+@import '../pages/profile/profile';
+@import '../pages/error404/error404';
+@import '../pages/error500/error500';
+@import '../pages/pageDisplay/pageDisplay';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap';
+@import './validation';
+
+.container {
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+}
+
+body {
+	margin: 0;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}

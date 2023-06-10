@@ -1,0 +1,33 @@
+section.chats
+    .chats__block
+        .chats__block-left
+            .chats__item          
+                        #{link}
+                            .chats__input
+                                #{search}
+                                                    img(src=`${images.magnifier}` alt='лупа')
+                                #{list}
+                            .chats__block-right
+                                h3.chats__title Выберите чат чтобы отправить сообщение
+                            .chats__message
+                                .chats__message-header
+                                    .chats__message-avatar
+                                        .chats__message-img
+                                            img(src=`${avatar ? 'https://ya-praktikum.tech/api/v2/resources' + avatar : 'https://new.kemmamed.ru/upload/staff_photo_no.jpg'}` alt='avatar')
+                                        .chats__message-name
+                                    .chats__message-points
+                                        span
+                                        span
+                                        span
+                                                        ul.chats__message-menu
+                                                                                li 
+                                                                                    img(src=`${images.menu}` alt='плюс')
+                                                                                    #{addUser}
+                                                                                                                        li 
+                                                                                                                            img(src=`${images.menu}` alt='крестик')
+                                                                                                                            #{deleteUser}
+                            .chats__message-content                              
+                                #{messages}
+                                form.chats__message-form
+                                                        #{message}
+                                                            #{button}
