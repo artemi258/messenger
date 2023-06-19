@@ -19,3 +19,6 @@ https://messenger2.onrender.com
 - `npm run build` сборка проекта в режиме продакшена
 - `npm run noEmit` проверка типизации проекта
 - `npm run test` запуск тестов
+
+## Стэк
+- JavaScript, TypeScript, SCSS, PUG.
