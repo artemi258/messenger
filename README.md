@@ -1,5 +1,8 @@
 # Приложение чата
 
+## Описание
+ веб приложение messenger. Был применен метод аналог React для обновления данных и переход по страницам без перезагрузки самого приложения.
+ 
 ## Макет проекта
 
 https://www.figma.com/file/lOkAumLkr8sGmjHgMjUhni/Chat-(Copy)?node-id=0%3A1&t=FKUl2d2oNId2c4Rc-1
